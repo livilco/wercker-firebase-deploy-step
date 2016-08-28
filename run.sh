@@ -1,3 +1,3 @@
 #!/bin/sh
 
-firebase deploy --project $WERCKER_FIREBASE_DEPLOY_PROJECT_NAME --token $WERCKER_FIREBASE_DEPLOY_TOKEN
+firebase deploy --project $WERCKER_FIREBASE_DEPLOY_PROJECT --token $WERCKER_FIREBASE_DEPLOY_TOKEN
