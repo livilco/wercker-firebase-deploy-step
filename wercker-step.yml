@@ -15,3 +15,12 @@ properties:
     type: string
     default: "false"
     required: false
+  message:
+    type: string
+    required: false
+  only:
+    type: string
+    required: false
+  except:
+    type: string
+    required: false
