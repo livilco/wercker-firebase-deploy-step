@@ -12,7 +12,7 @@ main() {
     fail "firebase-deploy: token argument cannot be empty"
   fi
 
-  if [ "$WERCKER_FIREBASE_DEPLOY_EXCEPT" ] && [ "$WERCKER_FIREBASE_DEPLOY_ONLY" ]; then
+  if [ -n "$WERCKER_FIREBASE_DEPLOY_EXCEPT" ] && [ -n "$WERCKER_FIREBASE_DEPLOY_ONLY" ]; then
     fail "firebase-deploy: cannot provide both \"except\" and \"only\" arguments"
   fi
 
