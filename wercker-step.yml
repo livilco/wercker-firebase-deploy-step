@@ -1,5 +1,5 @@
 name: firebase-deploy
-version: 1.0.2
+version: 1.1.0
 description: Deploys project to Firebase via the Firebase CLI.
 keywords:
   - firebase
@@ -14,4 +14,13 @@ properties:
   debug:
     type: string
     default: "false"
+    required: false
+  message:
+    type: string
+    required: false
+  only:
+    type: string
+    required: false
+  except:
+    type: string
     required: false
