@@ -14,34 +14,28 @@ deploy command. Options are passed along to the `firebase` executable as is.
 
 Note that the `only` and `except` parameters are mutually exclusive, and you should use one or the other, or neither if you want to deploy everything defined in your Firebase config.
 
-# Example
-
-```yml
-deploy:
-    steps:
-      - firebase-deploy:
-          project: $FIREBASE_PROJECT
-          token: $FIREBASE_TOKEN
-```
-
 # License
 
 The MIT License (MIT)
 
 # Changelog
 
+## 1.2.0
+
+* Migrate to Steps Store
+
 ## 1.1.0
 
-- Add support for optional parameters `message`, `only` and `except`
+* Add support for optional parameters `message`, `only` and `except`
 
 ## 1.0.2
 
-- Add checking for arguments and debug mode
+* Add checking for arguments and debug mode
 
 ## 1.0.1
 
-- Fix typo in Firebase project name environment variable
+* Fix typo in Firebase project name environment variable
 
 ## 1.0.0
 
-- Initial release
+* Initial release
