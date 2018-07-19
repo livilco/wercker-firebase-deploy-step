@@ -15,4 +15,5 @@ build:
 
 publish:
   steps:
-    - internal/publish-step
+    - internal/publish-step:
+        private: true
