@@ -1,5 +1,5 @@
 name: firebase-deploy
-version: 1.2.0
+version: 1.2.1
 summary: Deploys project to Firebase via the Firebase CLI.
 tags:
   - firebase
