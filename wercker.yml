@@ -2,9 +2,13 @@
 box: debian:stable-slim
 build:
   steps:
+  - script:
+    name: Install firebase cli
+    code: npm i -g firebase-tools
+
   - shellcheck:
     files: run.sh
-  
+
   - script:
     name: prepare output
     code: rm -rf $WERCKER_ROOT/.git
